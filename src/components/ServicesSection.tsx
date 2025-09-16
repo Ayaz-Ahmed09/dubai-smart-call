@@ -1,6 +1,7 @@
 import React from 'react';
 import { Phone, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { ScrollReveal } from '@/hooks/useScrollReveal';
 import serviceLighting from '@/assets/service-lighting.jpg';
 import serviceClimate from '@/assets/service-climate.jpg';
 import serviceSecurity from '@/assets/service-security.jpg';
@@ -85,10 +86,11 @@ const ServicesSection = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {services.map((service, index) => (
-          <div 
+          <ScrollReveal 
             key={service.id} 
+            direction="up" 
+            delay={index * 100}
             className="service-card p-6 group"
-            style={{ animationDelay: `${index * 0.1}s` }}
           >
             <div className="relative overflow-hidden rounded-xl mb-6">
               <img
@@ -118,7 +120,7 @@ const ServicesSection = () => {
               <Phone className="mr-2 h-4 w-4" />
               Call for Installation
             </Button>
-          </div>
+          </ScrollReveal>
         ))}
       </div>
 
