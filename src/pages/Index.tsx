@@ -1,12 +1,26 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import React from 'react';
+import HeroSection from '@/components/HeroSection';
+import ServicesSection from '@/components/ServicesSection';
+import AboutSection from '@/components/AboutSection';
+import TestimonialsSection from '@/components/TestimonialsSection';
+import FAQSection from '@/components/FAQSection';
+import KeywordsSection from '@/components/KeywordsSection';
+import ContactSection from '@/components/ContactSection';
+import Footer from '@/components/Footer';
+import FloatingCallButton from '@/components/FloatingCallButton';
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background">
+      <HeroSection />
+      <ServicesSection />
+      <AboutSection />
+      <TestimonialsSection />
+      <FAQSection />
+      <KeywordsSection />
+      <ContactSection />
+      <Footer />
+      <FloatingCallButton />
     </div>
   );
 };
