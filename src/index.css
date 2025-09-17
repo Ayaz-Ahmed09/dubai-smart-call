@@ -148,12 +148,10 @@
   }
   
   /* Floating Call Button */
-  .floating-call {
-    @apply fixed bottom-6 right-6 z-50 bg-call hover:bg-call/90 text-call-foreground p-4 rounded-full;
-    box-shadow: var(--shadow-primary);
-    animation: pulse 2s infinite;
-  }
-  
+  .floating-btn {
+  @apply bg-call hover:bg-call/90 text-call-foreground p-4 rounded-full shadow-lg;
+  animation: pulse 2s infinite;
+}
   /* Section Styling */
   .section-container {
     @apply py-20 px-4 max-w-7xl mx-auto;
@@ -417,6 +415,9 @@ button:hover::before, a:hover::before, [role="button"]:hover::before {
   html {
     scroll-behavior: auto;
   }
+}
+html, body {
+  overflow-x: hidden;
 }
 
 @layer base {
