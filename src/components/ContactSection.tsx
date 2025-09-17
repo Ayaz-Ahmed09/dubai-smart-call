@@ -4,15 +4,15 @@ import { Button } from '@/components/ui/button';
 
 const ContactSection = () => {
   const handleCallClick = () => {
-    window.open('tel:+971XXXXXXXXX', '_self');
+    window.open('tel:+971563412211', '_self');
   };
 
   const handleWhatsAppClick = () => {
-    window.open('https://wa.me/971XXXXXXXXX?text=Hi! I\'m interested in your home automation services in Dubai. Please provide more information and schedule a consultation.', '_blank');
+    window.open('https://wa.me/971563412211?text=Hi! I\'m interested in your home automation services in Dubai. Please provide more information and schedule a consultation.', '_blank');
   };
 
   const handleEmailClick = () => {
-    window.open('mailto:info@dubaiesmarthomes.com?subject=Smart Home Consultation Request&body=Hi, I\'m interested in learning more about your home automation services in Dubai. Please contact me to schedule a consultation.', '_self');
+    window.open('mailto:info@alnoortechnicalservices.com?subject=Smart Home Consultation Request&body=Hi, I\'m interested in learning more about your home automation services in Dubai. Please contact me to schedule a consultation.', '_self');
   };
 
   return (
@@ -37,7 +37,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold mb-1">Call Us Now</h4>
-                  <p className="text-muted-foreground">+971-XXX-XXXX</p>
+                  <p className="text-muted-foreground">+971563412211</p>
                   <p className="text-sm text-primary">24/7 Emergency Support</p>
                 </div>
               </div>
@@ -48,7 +48,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold mb-1">WhatsApp</h4>
-                  <p className="text-muted-foreground">+971-XXX-XXXX</p>
+                  <p className="text-muted-foreground">+971563412211</p>
                   <p className="text-sm text-primary">Instant Response</p>
                 </div>
               </div>
@@ -59,7 +59,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold mb-1">Email</h4>
-                  <p className="text-muted-foreground">info@dubaismarthomes.com</p>
+                  <p className="text-muted-foreground">info@alnoortechnicalservices.com</p>
                   <p className="text-sm text-primary">Detailed Inquiries</p>
                 </div>
               </div>
@@ -120,7 +120,7 @@ const ContactSection = () => {
             <div className="space-y-4">
               <Button onClick={handleCallClick} className="w-full cta-call text-lg py-6">
                 <Phone className="mr-2 h-5 w-5" />
-                Call Now: +971-XXX-XXXX
+                Call Now: +971563412211
               </Button>
               
               <Button onClick={handleWhatsAppClick} className="w-full cta-whatsapp text-lg py-6">

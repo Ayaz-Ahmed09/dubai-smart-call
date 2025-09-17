@@ -53,11 +53,11 @@ const Navbar = () => {
   };
 
   const handleWhatsAppClick = () => {
-    window.open('https://wa.me/971XXXXXXXXX?text=Hi! I\'m interested in your home automation services in Dubai. Please provide more information.', '_blank');
+    window.open('https://wa.me/971563412211?text=Hi! I\'m interested in your home automation services in Dubai. Please provide more information.', '_blank');
   };
 
   const handleCallClick = () => {
-    window.open('tel:+971XXXXXXXXX', '_self');
+    window.open('tel:+971563412211', '_self');
   };
 
   return (
@@ -66,9 +66,9 @@ const Navbar = () => {
         <div className="navbar-content">
           {/* Logo */}
           <div className="navbar-logo">
-            <span className="text-gradient font-bold text-xl">
-              Smart Home Dubai
-            </span>
+            <img src='/logo.png' width={50} height={50} className="text-gradient font-bold text-xl"/>
+              
+            
           </div>
 
           {/* Desktop Navigation */}
@@ -133,7 +133,7 @@ const Navbar = () => {
                 className="cta-call w-full mb-3"
               >
                 <Phone className="mr-2 h-5 w-5" />
-                Call Now: +971-XXX-XXXX
+                Call Now: +971563412211
               </Button>
               <Button 
                 onClick={handleWhatsAppClick}

@@ -45,11 +45,11 @@ const HeroSection = () => {
   };
 
   const handleWhatsAppClick = () => {
-    window.open('https://wa.me/971XXXXXXXXX?text=Hi! I\'m interested in your home automation services in Dubai. Please provide more information.', '_blank');
+    window.open('https://wa.me/971563412211?text=Hi! I\'m interested in your home automation services in Dubai. Please provide more information.', '_blank');
   };
 
   const handleCallClick = () => {
-    window.open('tel:+971XXXXXXXXX', '_self');
+    window.open('tel:+971563412211', '_self');
   };
 
   return (
@@ -78,7 +78,7 @@ const HeroSection = () => {
                 className="cta-call text-lg px-8 py-4"
               >
                 <Phone className="mr-2 h-5 w-5" />
-                Call Now: +971-XXX-XXXX
+                Call Now: +97 156 341 2211
               </Button>
               
               <Button 

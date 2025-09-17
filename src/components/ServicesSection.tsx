@@ -72,7 +72,7 @@ const services = [
 
 const ServicesSection = () => {
   const handleCallClick = () => {
-    window.open('tel:+971XXXXXXXXX', '_self');
+    window.open('tel:+971563412211', '_self');
   };
 
   return (

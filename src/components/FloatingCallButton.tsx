@@ -3,7 +3,7 @@ import { Phone } from 'lucide-react';
 
 const FloatingCallButton = () => {
   const handleCallClick = () => {
-    window.open('tel:+971XXXXXXXXX', '_self');
+    window.open('tel:+971563412211', '_self');
   };
 
   return (

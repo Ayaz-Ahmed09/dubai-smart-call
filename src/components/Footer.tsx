@@ -3,15 +3,15 @@ import { Phone, MessageCircle, Mail, MapPin, Clock } from 'lucide-react';
 
 const Footer = () => {
   const handleCallClick = () => {
-    window.open('tel:+971XXXXXXXXX', '_self');
+    window.open('tel:+971563412211', '_self');
   };
 
   const handleWhatsAppClick = () => {
-    window.open('https://wa.me/971XXXXXXXXX?text=Hi! I\'m interested in your home automation services in Dubai.', '_blank');
+    window.open('https://wa.me/971563412211?text=Hi! I\'m interested in your home automation services in Dubai.', '_blank');
   };
 
   const handleEmailClick = () => {
-    window.open('mailto:info@dubaismarthomes.com', '_self');
+    window.open('mailto:info@alnoortechnicalservices.com', '_self');
   };
 
   return (
@@ -121,7 +121,7 @@ const Footer = () => {
                 <Phone className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
                 <div>
                   <button onClick={handleCallClick} className="text-muted-foreground hover:text-primary transition-colors">
-                    +971-XXX-XXXX
+                    +971563412211
                   </button>
                   <p className="text-xs text-primary">24/7 Support</p>
                 </div>
@@ -141,7 +141,7 @@ const Footer = () => {
                 <Mail className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
                 <div>
                   <button onClick={handleEmailClick} className="text-muted-foreground hover:text-primary transition-colors">
-                    info@dubaismarthomes.com
+                   info@alnoortechnicalservices.com
                   </button>
                 </div>
               </div>
@@ -169,7 +169,7 @@ const Footer = () => {
         <div className="border-t border-border mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-muted-foreground">
-              © 2024 Dubai Smart Homes. All rights reserved. Licensed & Insured in UAE.
+              © 2025 Dubai Smart Homes. All rights reserved. Licensed & Insured in UAE.
             </p>
             <div className="flex gap-6 text-sm">
               <button onClick={handleCallClick} className="text-muted-foreground hover:text-primary transition-colors">
