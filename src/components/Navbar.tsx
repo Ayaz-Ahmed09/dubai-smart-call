@@ -52,13 +52,13 @@ const Navbar = () => {
     setIsOpen(false);
   };
 
-  const handleWhatsAppClick = () => {
-    window.open('https://wa.me/971563412211?text=Hi! I\'m interested in your home automation services in Dubai. Please provide more information.', '_blank');
-  };
+  // const handleWhatsAppClick = () => {
+  //   window.open('https://wa.me/971563412211?text=Hi! I\'m interested in your home automation services in Dubai. Please provide more information.', '_blank');
+  // };
 
-  const handleCallClick = () => {
-    window.open('tel:+971563412211', '_self');
-  };
+  // const handleCallClick = () => {
+  //   window.open('tel:+971563412211', '_self');
+  // };
 
   return (
     <>
@@ -87,20 +87,27 @@ const Navbar = () => {
           {/* Desktop CTA Buttons */}
           <div className="navbar-cta">
             <Button 
-              onClick={handleCallClick}
+              asChild
+              // onClick={handleCallClick}
               size="sm"
               className="cta-call text-sm px-4 py-2"
             >
+              <a href="tel:+971563412211"   >
               <Phone className="mr-1 h-4 w-4" />
               Call Now
+              </a>
             </Button>
+
             <Button 
-              onClick={handleWhatsAppClick}
+              asChild
+              // onClick={handleWhatsAppClick}
               size="sm"
               className="cta-whatsapp text-sm px-4 py-2"
             >
+              <a href='https://wa.me/971563412211' target="_blank" rel="noopener noreferrer" >
               <MessageCircle className="mr-1 h-4 w-4" />
               WhatsApp
+              </a>
             </Button>
           </div>
 
@@ -129,18 +136,22 @@ const Navbar = () => {
             
             <div className="navbar-mobile-cta">
               <Button 
-                onClick={handleCallClick}
+                asChild
                 className="cta-call w-full mb-3"
               >
+                <a href="tel:+971563412211">
                 <Phone className="mr-2 h-5 w-5" />
                 Call Now: +971563412211
+                </a>
               </Button>
               <Button 
-                onClick={handleWhatsAppClick}
+                asChild
                 className="cta-whatsapp w-full"
               >
+                <a href='https://wa.me/971563412211' target="_blank" rel="noopener noreferrer">
                 <MessageCircle className="mr-2 h-5 w-5" />
                 WhatsApp Us
+                </a>
               </Button>
             </div>
           </div>

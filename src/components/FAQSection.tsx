@@ -81,9 +81,11 @@ const FAQSection = () => {
             <p className="text-muted-foreground mb-6">
               Our expert team is ready to answer all your questions about smart home automation in Dubai. Get personalized recommendations for your specific needs.
             </p>
-            <Button onClick={handleCallClick} className="cta-primary">
+            <Button asChild className="cta-primary">
+              <a href="tel:+971563412211">
               <Phone className="mr-2 h-5 w-5" />
               Call Our Experts Now
+              </a>
             </Button>
           </div>
         </div>

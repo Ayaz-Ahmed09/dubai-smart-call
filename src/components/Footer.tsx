@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, MessageCircle, Mail, MapPin, Clock } from 'lucide-react';
+import { Phone, MessageCircle, Mail, MapPin, Clock, WheatIcon, CalculatorIcon } from 'lucide-react';
 
 const Footer = () => {
   const handleCallClick = () => {
@@ -25,21 +25,18 @@ const Footer = () => {
               Transform your Dubai home with premium automation solutions. Expert installation, 24/7 support, lifetime warranty.
             </p>
             <div className="flex gap-3">
-              <button 
-                onClick={handleCallClick}
+              <a href="tel:+971563412211" target="_blank" rel="noopener noreferrer"
                 className="w-10 h-10 bg-call hover:bg-call/90 rounded-full flex items-center justify-center transition-colors"
                 aria-label="Call us"
               >
                 <Phone className="h-5 w-5 text-call-foreground" />
-              </button>
-              <button 
-                onClick={handleWhatsAppClick}
-                className="w-10 h-10 bg-whatsapp hover:bg-whatsapp/90 rounded-full flex items-center justify-center transition-colors"
+              </a>
+              <a href="https://wa.me/971563412211" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-whatsapp hover:bg-whatsapp/90 rounded-full flex items-center justify-center transition-colors"
                 aria-label="WhatsApp us"
               >
                 <MessageCircle className="h-5 w-5 text-whatsapp-foreground" />
-              </button>
-              <button 
+              </a>
+              <button
                 onClick={handleEmailClick}
                 className="w-10 h-10 bg-accent hover:bg-accent/90 rounded-full flex items-center justify-center transition-colors"
                 aria-label="Email us"
@@ -120,28 +117,30 @@ const Footer = () => {
               <div className="flex items-start gap-3">
                 <Phone className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
                 <div>
-                  <button onClick={handleCallClick} className="text-muted-foreground hover:text-primary transition-colors">
+                  <a href="tel:+971563412211" className="text-muted-foreground hover:text-primary transition-colors">
                     +971563412211
-                  </button>
+                  </a>
                   <p className="text-xs text-primary">24/7 Support</p>
                 </div>
               </div>
-              
+
+              <div className="space-y-4 text-sm">
               <div className="flex items-start gap-3">
-                <MessageCircle className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                <CalculatorIcon className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
                 <div>
-                  <button onClick={handleWhatsAppClick} className="text-muted-foreground hover:text-primary transition-colors">
-                    WhatsApp Support
-                  </button>
-                  <p className="text-xs text-primary">Instant Response</p>
+                  <a href="tel:+971563412211" className="text-muted-foreground hover:text-primary transition-colors">
+                    Instant Quote / Consultation / Response
+                  </a>
+                  <p className="text-xs text-primary">All Dubai</p>
                 </div>
               </div>
+               </div>
 
               <div className="flex items-start gap-3">
                 <Mail className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
                 <div>
                   <button onClick={handleEmailClick} className="text-muted-foreground hover:text-primary transition-colors">
-                   info@alnoortechnicalservices.com
+                    info@alnoortechnicalservices.com
                   </button>
                 </div>
               </div>

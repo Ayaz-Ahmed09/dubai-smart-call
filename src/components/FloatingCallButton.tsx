@@ -1,8 +1,8 @@
 import { Phone, MessageCircle, ArrowUp } from "lucide-react";
 
 export default function FloatingActions() {
-  const call = () => window.open("tel:+971563412211", "_self");
-  const whatsapp = () => window.open("https://wa.me/971563412211", "_blank");
+  // const call = () => window.open("tel:+971563412211", "_self");
+  // const whatsapp = () => window.open("https://wa.me/971563412211", "_blank");
   const scrollTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
   return (
@@ -10,12 +10,12 @@ export default function FloatingActions() {
       <button onClick={scrollTop} className="bg-[ var(--gradient-primary)] backdrop-blur-xl p-4 rounded-full ring-2 ring-orange-400" aria-label="Scroll to top">
         <ArrowUp className="h-6 w-6 text-white" />
       </button>
-      <button onClick={call} className="floating-btn" aria-label="Call us now">
+      <a href="tel:+971563412211" className="floating-btn" aria-label="Call us now">
         <Phone className="h-6 w-6" />
-      </button>
-      <button onClick={whatsapp} className="floating-btn" aria-label="Chat on WhatsApp">
+      </a>
+      <a href="https://wa.me/971563412211" className="floating-btn" aria-label="Chat on WhatsApp">
         <MessageCircle className="h-6 w-6" />
-      </button>
+      </a>
     </div>
   );
 }

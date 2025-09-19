@@ -74,19 +74,25 @@ const HeroSection = () => {
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
-                onClick={handleCallClick}
+              asChild
+                // onClick={handleCallClick}
                 className="cta-call text-lg px-8 py-4"
               >
+                <a href="tel:+971563412211"   >
                 <Phone className="mr-2 h-5 w-5" />
                 Call Now: +97 156 341 2211
+                </a>
               </Button>
               
               <Button 
-                onClick={handleWhatsAppClick}
+              asChild
+                // onClick={handleWhatsAppClick}
                 className="cta-whatsapp text-lg px-8 py-4"
               >
+                <a href='https://wa.me/971563412211' target="_blank" rel="noopener noreferrer" >
                 <MessageCircle className="mr-2 h-5 w-5" />
                 WhatsApp Us
+                </a>
               </Button>
             </div>
 

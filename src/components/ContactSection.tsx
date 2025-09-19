@@ -3,13 +3,7 @@ import { Phone, MessageCircle, Clock, MapPin, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const ContactSection = () => {
-  const handleCallClick = () => {
-    window.open('tel:+971563412211', '_self');
-  };
 
-  const handleWhatsAppClick = () => {
-    window.open('https://wa.me/971563412211?text=Hi! I\'m interested in your home automation services in Dubai. Please provide more information and schedule a consultation.', '_blank');
-  };
 
   const handleEmailClick = () => {
     window.open('mailto:info@alnoortechnicalservices.com?subject=Smart Home Consultation Request&body=Hi, I\'m interested in learning more about your home automation services in Dubai. Please contact me to schedule a consultation.', '_self');
@@ -118,14 +112,18 @@ const ContactSection = () => {
             </ul>
 
             <div className="space-y-4">
-              <Button onClick={handleCallClick} className="w-full cta-call text-lg py-6">
-                <Phone className="mr-2 h-5 w-5" />
-                Call Now: +971563412211
+              <Button asChild className="w-full cta-call text-lg py-6">
+                <a href="tel:+971563412211">
+                  <Phone className="mr-2 h-5 w-5" />
+                  Call Now: +971563412211
+                </a>
               </Button>
               
-              <Button onClick={handleWhatsAppClick} className="w-full cta-whatsapp text-lg py-6">
-                <MessageCircle className="mr-2 h-5 w-5" />
-                WhatsApp for Instant Quote
+              <Button asChild className="w-full cta-whatsapp text-lg py-6">
+                <a href="https://wa.me/971563412211">
+                  <MessageCircle className="mr-2 h-5 w-5" />
+                  WhatsApp for Instant Quote
+                </a>
               </Button>
 
               <Button onClick={handleEmailClick} className="w-full bg-accent hover:bg-accent/90 text-accent-foreground text-lg py-6">

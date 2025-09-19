@@ -34,9 +34,7 @@ const testimonials = [
 ];
 
 const TestimonialsSection = () => {
-  const handleCallClick = () => {
-    window.open('tel:+971563412211', '_self');
-  };
+
 
   return (
     <section className="section-container bg-muted/30">
@@ -86,9 +84,11 @@ const TestimonialsSection = () => {
           <p className="text-muted-foreground mb-6">
             Experience the same exceptional service and quality that has made us Dubai's most trusted home automation company.
           </p>
-          <Button onClick={handleCallClick} className="cta-primary">
+          <Button asChild className="cta-primary">
+            <a href="tel:+971563412211">
             <Phone className="mr-2 h-5 w-5" />
             Get Your Free Quote Today
+            </a>
           </Button>
         </div>
       </div>

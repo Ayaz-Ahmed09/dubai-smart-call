@@ -34,10 +34,12 @@ const AboutSection = () => {
           </div>
           
           <div className="mt-8">
-            <Button onClick={handleCallClick} className="cta-primary">
-              <Phone className="mr-2 h-5 w-5" />
-              Schedule Consultation
-            </Button>
+           <Button asChild className="cta-primary">
+  <a href="tel:+971563412211">
+    <Phone className="mr-2 h-5 w-5" />
+    Schedule Consultation
+  </a>
+</Button>
           </div>
         </div>
 
